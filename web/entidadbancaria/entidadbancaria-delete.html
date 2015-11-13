@@ -1,0 +1,14 @@
+
+<div ng-controller="DeleteController">
+    <table>
+
+        <tr><td>ID: </td><td> <input type="text"  ng-model="entidadBancaria.idEntidadBancaria" disabled/> </td></tr>
+        <tr><td>nombre: </td><td> <input type="text"  ng-model="entidadBancaria.nombre" disabled/> </td></tr>
+        <tr><td>codigo entidad: </td><td> <input type="text" ng-model="entidadBancaria.codigoEntidad" disabled/> </td></tr>
+        <tr><td>direccion: </td><td> <input type="text" ng-model="entidadBancaria.direccion" disabled/> </td></tr>
+        <tr><td>cif: </td><td> <input type="text" ng-model="entidadBancaria.cif" disabled/> </td></tr>
+
+    </table>
+    <a href="#/entidadbancaria/list">Atras </a>
+    <button ng-click="delete()">Borrar</button>
+</div>

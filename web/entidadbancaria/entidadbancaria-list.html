@@ -1,0 +1,17 @@
+
+<div ng-controller="ListController">
+    <table border="1">
+        <tr style="background-color: limegreen">
+            <td>Nombre</td>
+            <td>Codigo Entidad</td>
+        </tr>
+        <tr ng-repeat="entidadBancaria in entidadesBancarias">
+            <td><a href="#/entidadbancaria/get/{{entidadBancaria.idEntidadBancaria}}">{{entidadBancaria.nombre}}</a></td>
+            <td>{{entidadBancaria.codigoEntidad}}</td>
+            <td><a href="#/entidadbancaria/delete/{{entidadBancaria.idEntidadBancaria}}">Borrar</a></td>
+            <td><a href="#/entidadbancaria/update/{{entidadBancaria.idEntidadBancaria}}">Actualizar</a></td>
+        </tr>
+    </table>
+    
+    <h2><a href="#/entidadbancaria/insert">Insertar</a></h2>
+</div>

@@ -1,0 +1,12 @@
+<div ng-controller="UpdateController">
+    <table>
+
+        <tr><td>ID: </td><td> <input type="text"  ng-model="entidadBancaria.idEntidadBancaria" disabled/> </td></tr>
+        <tr><td>nombre: </td><td> <input type="text"  ng-model="entidadBancaria.nombre"/> </td></tr>
+        <tr><td>codigo entidad: </td><td> <input type="text" ng-model="entidadBancaria.codigoEntidad"/> </td></tr>
+        <tr><td>direccion: </td><td> <input type="text" ng-model="entidadBancaria.direccion"/> </td></tr>
+        <tr><td>cif: </td><td> <input type="text" ng-model="entidadBancaria.cif"/> </td></tr>
+
+    </table>
+    <button ng-click="update()">Actualizar</button>
+</div>
